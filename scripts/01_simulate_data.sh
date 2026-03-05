@@ -7,7 +7,7 @@
 #   bash scripts/01_simulate_data.sh <bfile_prefix>
 #
 # Arguments:
-#   bfile_prefix  Prefix for PLINK binary files (.bed/.bim/.fam) for CEU samples
+#   bfile_prefix  Prefix for PLINK binary files (.bed/.bim/.fam) for EUR samples
 #
 # Outputs (written to data/simulated/):
 #   <prefix>_hsq<hsq>_prev<prev>.phen   Simulated phenotype file
