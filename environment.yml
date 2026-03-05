@@ -1,0 +1,25 @@
+name: cse284-heritability
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  # Python
+  - python=3.10
+  # LDSC dependencies
+  - numpy>=1.23
+  - scipy>=1.9
+  - pandas>=1.5
+  - bitarray>=2.6
+  # Analysis and visualization
+  - matplotlib>=3.6
+  - seaborn>=0.12
+  # Bioinformatics tools
+  - plink2>=2.00
+  - gcta>=1.94          # provides gcta64 binary
+  # Utilities
+  - pip
+  - pip:
+      # LDSC is not on conda; clone manually (see README setup instructions)
+      # Listed here for documentation purposes only
+      - argparse
