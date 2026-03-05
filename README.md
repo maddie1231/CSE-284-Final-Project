@@ -1,6 +1,4 @@
-# LMMs vs LDSC for Heritability Estimation in CEU
-
-**CSE 284 Final Project (Option 2)**
+# CSE 284 Final Project (Option 2) : LMMs vs LDSC for Heritability Estimation in EUR
 
 ---
 
@@ -19,59 +17,7 @@ We simulate multiple phenotypes with varying heritability (h2) and disease preva
 
 ---
 
-## Repository Structure
-
-```
-CSE-284-Final-Project/
-├── README.md
-├── environment.yml              # Conda environment specification
-├── scripts/
-│   ├── 01_simulate_data.sh     # Simulate phenotypes with GCTA (varying h2, prevalence)
-│   ├── 02_compute_grm.sh       # Compute Genetic Relationship Matrix with GCTA
-│   ├── 03_run_gcta_reml.sh     # Run GCTA REML heritability estimation (LMM)
-│   ├── 04_prepare_sumstats.sh  # Run GWAS with PLINK and munge sumstats for LDSC
-│   ├── 05_run_ldsc.sh          # Run LDSC heritability estimation
-│   └── 06_analyze_results.py   # Compare estimates, compute correlation, plot figures
-├── results/
-│   ├── gcta/                   # GCTA REML outputs (.hsq files, timing)
-│   └── ldsc/                   # LDSC outputs (.log files, timing)
-└── data/                       # Not tracked in git (see Data section below)
-```
-
----
-
-## Data
-
-The `data/` directory is not committed to this repository due to file size. Below is the expected layout:
-
-```
-data/
-├── genotypes/
-│   └── ceu/
-│       ├── ceu_1000g.bed       # 1000 Genomes CEU genotypes (PLINK binary format)
-│       ├── ceu_1000g.bim       # SNP information
-│       └── ceu_1000g.fam       # Sample information
-├── grm/
-│   ├── ceu_grm.grm.bin         # Binary GRM (produced by script 02)
-│   ├── ceu_grm.grm.N.bin       # Number of SNPs per pair
-│   └── ceu_grm.grm.id          # Sample IDs
-├── simulated/
-│   ├── qt_hsq0.1.phen          # Quantitative trait, h2=0.1 (10 replicates each)
-│   ├── qt_hsq0.5.phen          # ...
-│   ├── bt_hsq0.3_prev0.05.phen # Binary trait, h2=0.3, prevalence=5%
-│   └── ...
-├── sumstats/
-│   ├── qt_hsq0.1.sumstats.gz   # Munged GWAS sumstats for LDSC
-│   └── ...
-└── ref/
-    ├── w_hm3.snplist            # HapMap3 SNP list for munge_sumstats.py
-    ├── ld_scores/
-    │   └── eur_w_ld_chr/        # Precomputed 1000G EUR LD scores (from LDSC repo)
-    └── weights/
-        └── weights.hm3_noMHC.*  # LD score regression weights
-```
-
-**Genotype data source:** 1000 Genomes Project, CEU (Utah residents with Northern/Western European ancestry). Download from the [1000 Genomes FTP](http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/) and convert to PLINK format, keeping only CEU samples.
+**Genotype data source:** 1000 Genomes Project, EUR. Downloaded from the [1000 Genomes FTP](http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/) and convert to PLINK format, keeping only CEU samples.
 
 **LD scores and weights:** Download from the [LDSC GitHub releases](https://github.com/bulik/ldsc) or the LDSC wiki (files `eur_w_ld_chr.tar.bz2` and `weights_hm3_no_hla.tgz`).
 
