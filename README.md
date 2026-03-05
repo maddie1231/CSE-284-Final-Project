@@ -2,12 +2,6 @@
 
 **CSE 284 Final Project (Option 2)**
 
-| Name | PID |
-|---|---|
-| Madeleine Pittigher | A69033583 |
-| Jeremy Parker Yang | A69033516 |
-| Rosan Wang | A69033717 |
-
 ---
 
 ## Overview
