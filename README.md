@@ -1,9 +1,5 @@
 # CSE 284 Final Project (Option 2) : LMMs vs LDSC for Heritability Estimation in EUR
 
----
-
-## Overview
-
 This project compares two widely-used methods for estimating SNP-based heritability:
 
 - **GCTA REML (LMM-based):** Uses individual-level genotype data to estimate the proportion of phenotypic variance explained by genome-wide SNPs. A Genetic Relationship Matrix (GRM) is constructed from the genotypes, and REML is used to partition variance into genetic and residual components.
