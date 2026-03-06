@@ -53,13 +53,6 @@ for phen_file in "${PHEN_DIR}"/*.phen; do
             --out "${OUT_DIR}/${trait}" \
             --no-psam-pheno
     fi
-
-    echo "  Munging sumstats for ${trait}..."
-    python "${LDSC_DIR}/munge_sumstats.py" \
-        --sumstats "${OUT_DIR}/${trait}.${trait#*_}." \
-        --merge-alleles "$HAPMAP_SNPS" \
-        --out "${OUT_DIR}/${trait}" \
-        --chunksize 500000
 done
 
-echo "Done. Munged sumstats written to ${OUT_DIR}/"
+echo "Done"
