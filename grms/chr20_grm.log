@@ -1,0 +1,37 @@
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version v1.95.1 Linux
+* Built at Feb  2 2026 16:51:42, by GCC 8.4
+* (C) 2010-present, Yang Lab, Westlake University
+* Please report bugs to Jian Yang <jian.yang@westlake.edu.cn>
+*******************************************************************
+Analysis started at 18:17:41 PST on Fri Mar 06 2026.
+Hostname: ophelia.ucsd.edu
+
+Options: 
+ 
+--bfile /nfs/lab/tscc/ref/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.20 
+--make-grm 
+--out chr20_grm 
+
+Note: GRM is computed using the SNPs on the autosomes.
+Reading PLINK FAM file from [/nfs/lab/tscc/ref/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.20.fam]...
+489 individuals to be included from FAM file.
+489 individuals to be included. 0 males, 0 females, 489 unknown.
+Reading PLINK BIM file from [/nfs/lab/tscc/ref/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.20.bim]...
+221626 SNPs to be included from BIM file(s).
+Computing the genetic relationship matrix (GRM) v2 ...
+Subset 1/1, no. subject 1-489
+  489 samples, 221626 markers, 119805 GRM elements
+IDs for the GRM file have been saved in the file [chr20_grm.grm.id]
+Computing GRM...
+  100% finished in 1.4 sec
+221626 SNPs have been processed.
+  Used 221626 valid SNPs.
+The GRM computation is completed.
+Saving GRM...
+GRM has been saved in the file [chr20_grm.grm.bin]
+Number of SNPs in each pair of individuals has been saved in the file [chr20_grm.grm.N.bin]
+
+Analysis finished at 18:17:43 PST on Fri Mar 06 2026
+Overall computational time: 1.86 sec.
