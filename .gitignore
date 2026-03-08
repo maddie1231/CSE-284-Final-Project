@@ -4,10 +4,6 @@ data/
 # Tools (installed separately)
 tools/
 
-# Results (generated outputs, keep placeholder)
-results/*
-!results/.gitkeep
-
 # Python
 __pycache__/
 *.py[cod]
