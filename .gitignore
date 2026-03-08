@@ -1,8 +1,12 @@
+*.sumstats.gz
+*.mlma
 # Data (large files, not tracked)
 data/
 
 # Tools (installed separately)
 tools/
+
+ldsc/ref/
 
 # Results (generated outputs, keep placeholder)
 results/*
