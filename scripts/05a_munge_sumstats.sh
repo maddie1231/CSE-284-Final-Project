@@ -27,25 +27,20 @@ done
 ##### step 2 ###
 # --ref-ld-chr: independent variable in LDSC
 # --w-ld-chr: ld scores to use for regresison weights 
+outdir=/Users/rosanwang/Documents/school/ucsd/year\ 2/CSE\ 284/project/ldsc/sumstats
 ref=/Users/rosanwang/Documents/school/ucsd/year\ 2/CSE\ 284/project/ldsc/ref/baselineLD_v2.3/baselineLD.
 weights=/Users/rosanwang/Documents/school/ucsd/year\ 2/CSE\ 284/project/ldsc/ref/GRCh38/weights/weights.hm3_noMHC.
 
-for file in ${outdir}/T1D_sim_gwas_chr6.sumstats.gz; do
-
-
-    # start_time=$(date +%s)
+for file in ${outdir}/*.sumstats.gz; do
     name=$(basename "$file" .sumstats.gz)
     echo "  Running LDSC for ${name}..."
-    ./ldsc.py \
+
+    gtime -v -o "${outdir}/${name}.time.txt" \
+        ./ldsc.py \
         --h2 ${file} \
         --ref-ld-chr ${ref} \
         --w-ld-chr ${weights} --out ${outdir}/${name}_h2
 
-    # end_time=$(date +%s)
-    # runtime_s=$(( (end_time - start_time) / 1000000000 ))
-
-    # peak_mem=$(grep "Maximum resident" "${outdir}/${name}.time.txt" | awk '{print $NF}')
-    # echo -e "${name}\t${runtime_s}\t${peak_mem}" >> "$TIMING_FILE"
 done
 
 

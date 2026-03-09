@@ -12,7 +12,7 @@ Call:
 --out /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/Autism_sim_gwas_chr20_h2 \
 --w-ld-chr /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/GRCh38/weights/weights.hm3_noMHC. 
 
-Beginning analysis at Sat Mar  7 18:07:03 2026
+Beginning analysis at Sun Mar  8 17:15:53 2026
 Reading summary statistics from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/Autism_sim_gwas_chr20.sumstats.gz ...
 Read summary statistics for 189551 SNPs.
 Reading reference panel LD Score from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/baselineLD_v2.3/baselineLD.[1-22] ... (ldscore_fromlist)
@@ -44,5 +44,5 @@ Lambda GC: 0.9374
 Mean Chi^2: 0.9594
 Intercept: 1.0365 (0.0449)
 Ratio: NA (mean chi^2 < 1)
-Analysis finished at Sat Mar  7 18:07:27 2026
-Total time elapsed: 24.7s
+Analysis finished at Sun Mar  8 17:16:17 2026
+Total time elapsed: 24.18s

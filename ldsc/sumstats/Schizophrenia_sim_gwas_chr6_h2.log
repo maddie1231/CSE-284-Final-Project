@@ -12,7 +12,7 @@ Call:
 --out /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/Schizophrenia_sim_gwas_chr6_h2 \
 --w-ld-chr /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/GRCh38/weights/weights.hm3_noMHC. 
 
-Beginning analysis at Sat Mar  7 18:07:55 2026
+Beginning analysis at Sun Mar  8 17:16:45 2026
 Reading summary statistics from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/Schizophrenia_sim_gwas_chr6.sumstats.gz ...
 Read summary statistics for 563790 SNPs.
 Reading reference panel LD Score from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/baselineLD_v2.3/baselineLD.[1-22] ... (ldscore_fromlist)
@@ -44,5 +44,5 @@ Lambda GC: 0.9489
 Mean Chi^2: 0.935
 Intercept: 0.9278 (0.0281)
 Ratio: NA (mean chi^2 < 1)
-Analysis finished at Sat Mar  7 18:08:20 2026
-Total time elapsed: 25.1s
+Analysis finished at Sun Mar  8 17:17:09 2026
+Total time elapsed: 24.43s

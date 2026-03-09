@@ -12,7 +12,7 @@ Call:
 --out /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/Anorexia_sim_gwas_chr3_h2 \
 --w-ld-chr /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/GRCh38/weights/weights.hm3_noMHC. 
 
-Beginning analysis at Sat Mar  7 18:06:34 2026
+Beginning analysis at Sun Mar  8 17:15:29 2026
 Reading summary statistics from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/Anorexia_sim_gwas_chr3.sumstats.gz ...
 Read summary statistics for 596225 SNPs.
 Reading reference panel LD Score from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/baselineLD_v2.3/baselineLD.[1-22] ... (ldscore_fromlist)
@@ -44,5 +44,5 @@ Lambda GC: 0.9839
 Mean Chi^2: 1.0318
 Intercept: 0.9599 (0.0344)
 Ratio < 0 (usually indicates GC correction).
-Analysis finished at Sat Mar  7 18:07:02 2026
-Total time elapsed: 28.07s
+Analysis finished at Sun Mar  8 17:15:53 2026
+Total time elapsed: 23.87s
