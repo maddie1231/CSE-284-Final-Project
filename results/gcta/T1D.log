@@ -1,28 +1,27 @@
 *******************************************************************
 * Genome-wide Complex Trait Analysis (GCTA)
-* version v1.94.1 Linux
-* Built at Nov 15 2022 21:14:25, by GCC 8.5
+* version v1.95.1 Mac
 * (C) 2010-present, Yang Lab, Westlake University
 * Please report bugs to Jian Yang <jian.yang@westlake.edu.cn>
 *******************************************************************
-Analysis started at 22:19:20 PST on Sat Mar 07 2026.
-Hostname: login02
+Analysis started at 16:53:34 PDT on Sun Mar 08 2026.
+Hostname: 02-0233-Rosan.local
 
 Accepted options:
---grm /expanse/lustre/projects/ddp412/jparkeryang/CSE-284-Final-Project/grms/chr6_grm
---pheno /expanse/lustre/projects/ddp412/jparkeryang/CSE-284-Final-Project/gwas_simulation/T1D/T1D_sim_chr6.phen
+--grm /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/grms/chr6_grm
+--pheno /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/gwas_simulation/T1D/T1D_sim_chr6.phen
 --reml
 --reml-no-constrain
---out /expanse/lustre/projects/ddp412/jparkeryang/CSE-284-Final-Project/results/gcta/T1D
+--out /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/results/gcta/T1D
 
 Note: This is a multi-thread program. You could specify the number of threads by the --thread-num option to speed up the computation if there are multiple processors in your machine.
 
-Reading IDs of the GRM from [/expanse/lustre/projects/ddp412/jparkeryang/CSE-284-Final-Project/grms/chr6_grm.grm.id].
-489 IDs are read from [/expanse/lustre/projects/ddp412/jparkeryang/CSE-284-Final-Project/grms/chr6_grm.grm.id].
-Reading the GRM from [/expanse/lustre/projects/ddp412/jparkeryang/CSE-284-Final-Project/grms/chr6_grm.grm.bin].
-GRM for 489 individuals are included from [/expanse/lustre/projects/ddp412/jparkeryang/CSE-284-Final-Project/grms/chr6_grm.grm.bin].
-Reading phenotypes from [/expanse/lustre/projects/ddp412/jparkeryang/CSE-284-Final-Project/gwas_simulation/T1D/T1D_sim_chr6.phen].
-Non-missing phenotypes of 400 individuals are included from [/expanse/lustre/projects/ddp412/jparkeryang/CSE-284-Final-Project/gwas_simulation/T1D/T1D_sim_chr6.phen].
+Reading IDs of the GRM from [/Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/grms/chr6_grm.grm.id].
+489 IDs are read from [/Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/grms/chr6_grm.grm.id].
+Reading the GRM from [/Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/grms/chr6_grm.grm.bin].
+GRM for 489 individuals are included from [/Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/grms/chr6_grm.grm.bin].
+Reading phenotypes from [/Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/gwas_simulation/T1D/T1D_sim_chr6.phen].
+Non-missing phenotypes of 400 individuals are included from [/Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/gwas_simulation/T1D/T1D_sim_chr6.phen].
 Assuming a disease phenotype for a case-control study: 200 cases and 200 controls 
 Note: you can specify the disease prevalence by the option --prevalence so that GCTA can transform the variance explained to the underlying liability scale.
 400 individuals are in common in these files.
@@ -63,7 +62,7 @@ Sampling variance/covariance of the estimates of variance components:
 3.355706e-03	-2.936426e-03	
 -2.936426e-03	2.830334e-03	
 
-Summary result of REML analysis has been saved in the file [/expanse/lustre/projects/ddp412/jparkeryang/CSE-284-Final-Project/results/gcta/T1D.hsq].
+Summary result of REML analysis has been saved in the file [/Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/results/gcta/T1D.hsq].
 
-Analysis finished at 22:19:20 PST on Sat Mar 07 2026
-Overall computational time: 0.05 sec.
+Analysis finished at 16:53:34 PDT on Sun Mar 08 2026
+Overall computational time: 0.02 sec.

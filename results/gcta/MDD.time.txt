@@ -1,23 +1,23 @@
-	Command being timed: "gcta64 --grm /expanse/lustre/projects/ddp412/jparkeryang/CSE-284-Final-Project/grms/chr13_grm --pheno /expanse/lustre/projects/ddp412/jparkeryang/CSE-284-Final-Project/gwas_simulation/MDD/MDD_sim_chr13.phen --reml --reml-no-constrain --out /expanse/lustre/projects/ddp412/jparkeryang/CSE-284-Final-Project/results/gcta/MDD"
-	User time (seconds): 0.03
+	Command being timed: "/Users/rosanwang/gcta-1.95.1-macOS-arm64/bin/gcta64 --grm /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/grms/chr13_grm --pheno /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/gwas_simulation/MDD/MDD_sim_chr13.phen --reml --reml-no-constrain --out /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/results/gcta/MDD"
+	User time (seconds): 0.02
 	System time (seconds): 0.00
-	Percent of CPU this job got: 81%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.04
+	Percent of CPU this job got: 112%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.02
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 14664
+	Maximum resident set size (kbytes): 14208
 	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 2731
-	Voluntary context switches: 14
-	Involuntary context switches: 66
+	Major (requiring I/O) page faults: 5
+	Minor (reclaiming a frame) page faults: 1032
+	Voluntary context switches: 7
+	Involuntary context switches: 552
 	Swaps: 0
 	File system inputs: 0
-	File system outputs: 16
+	File system outputs: 0
 	Socket messages sent: 0
 	Socket messages received: 0
 	Signals delivered: 0
-	Page size (bytes): 4096
+	Page size (bytes): 16384
 	Exit status: 0
