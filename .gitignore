@@ -1,3 +1,4 @@
+*.mlma
 # Data (large files, not tracked)
 data/
 ldsc/ref/
