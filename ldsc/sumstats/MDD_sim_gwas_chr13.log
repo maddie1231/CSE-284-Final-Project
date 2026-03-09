@@ -1,0 +1,42 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./munge_sumstats.py \
+--out /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/MDD_sim_gwas_chr13 \
+--N 489.0 \
+--sumstats /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/gwas_simulation/MDD/MDD_sim_gwas_chr13.mlma 
+
+Interpreting column names as follows:
+A1:	Allele 1, interpreted as ref allele for signed sumstat.
+p:	p-Value
+A2:	Allele 2, interpreted as non-ref allele for signed sumstat.
+b:	[linear/logistic] regression coefficient (0 --> no effect; above 0 --> A1 is trait/risk increasing)
+SNP:	Variant ID (e.g., rs number)
+
+Reading sumstats from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/gwas_simulation/MDD/MDD_sim_gwas_chr13.mlma into memory 5000000 SNPs at a time.
+Read 366200 SNPs from --sumstats file.
+Removed 51 SNPs with missing values.
+Removed 0 SNPs with INFO <= 0.9.
+Removed 0 SNPs with MAF <= 0.01.
+Removed 0 SNPs with out-of-bounds p-values.
+Removed 55513 variants that were not SNPs or were strand-ambiguous.
+310636 SNPs remain.
+Removed 0 SNPs with duplicated rs numbers (310636 SNPs remain).
+Using N = 489.0
+Median value of b was -0.000328738, which seems sensible.
+Writing summary statistics for 310636 SNPs (310636 with nonmissing beta) to /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/MDD_sim_gwas_chr13.sumstats.gz.
+
+Metadata:
+Mean chi^2 = 0.999
+WARNING: mean chi^2 may be too small.
+Lambda GC = 1.022
+Max chi^2 = 15.504
+0 Genome-wide significant SNPs (some may have been removed by filtering).
+
+Conversion finished at Sat Mar  7 17:16:16 2026
+Total time elapsed: 3.18s

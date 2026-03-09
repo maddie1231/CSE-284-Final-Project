@@ -5,7 +5,11 @@ ldsc/ref/
 
 # Tools (installed separately)
 tools/
+ldsc/ref/
 
+# Results (generated outputs, keep placeholder)
+results/*
+!results/.gitkeep
 # Python
 __pycache__/
 *.py[cod]
