@@ -13,7 +13,7 @@ We simulate multiple phenotypes with varying heritability (h2) and disease preva
 
 ---
 
-**Genotype data source:** 1000 Genomes Project, EUR. Downloaded from the [1000 Genomes FTP](http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/) and convert to PLINK format, keeping only CEU samples.
+**Genotype data source:** 1000 Genomes Project, EUR. Downloaded from the [1000 Genomes FTP](http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/) and convert to PLINK format, keeping only EUR samples.
 
 **LD scores and weights:** Download from the [LDSC GitHub releases](https://github.com/bulik/ldsc) or the LDSC wiki (files `eur_w_ld_chr.tar.bz2` and `weights_hm3_no_hla.tgz`) https://zenodo.org/records/10515792 . 
 
@@ -48,7 +48,7 @@ git clone https://github.com/bulik/ldsc.git tools/ldsc
 
 ### 4. Prepare data
 
-Place the CEU PLINK binary files under `data/genotypes/ceu/` and the LD score reference files under `data/ref/` as described in the Data section above.
+Place the EUR PLINK binary files under `data/genotypes/ceu/` and the LD score reference files under `data/ref/` as described in the Data section above.
 
 ---
 
