@@ -12,7 +12,7 @@ Call:
 --out /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/PGC.Nature.2014.Schizophrenia_h2 \
 --w-ld-chr /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/GRCh38/weights/weights.hm3_noMHC. 
 
-Beginning analysis at Sat Mar  7 21:01:03 2026
+Beginning analysis at Thu Mar 12 17:24:55 2026
 Reading summary statistics from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/PGC.Nature.2014.Schizophrenia.sumstats.gz ...
 Read summary statistics for 1189499 SNPs.
 Reading reference panel LD Score from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/baselineLD_v2.3/baselineLD.[1-22] ... (ldscore_fromlist)
@@ -43,5 +43,5 @@ Lambda GC: 1.5659
 Mean Chi^2: 1.7528
 Intercept: 1.0593 (0.0118)
 Ratio: 0.0787 (0.0157)
-Analysis finished at Sat Mar  7 21:01:34 2026
-Total time elapsed: 31.35s
+Analysis finished at Thu Mar 12 17:25:25 2026
+Total time elapsed: 29.84s

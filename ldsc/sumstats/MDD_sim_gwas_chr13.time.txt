@@ -1,18 +1,18 @@
 	Command being timed: "./ldsc.py --h2 /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/MDD_sim_gwas_chr13.sumstats.gz --ref-ld-chr /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/baselineLD_v2.3/baselineLD. --w-ld-chr /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/GRCh38/weights/weights.hm3_noMHC. --out /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/MDD_sim_gwas_chr13_h2"
-	User time (seconds): 24.46
-	System time (seconds): 6.22
-	Percent of CPU this job got: 113%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:27.07
+	User time (seconds): 25.62
+	System time (seconds): 7.28
+	Percent of CPU this job got: 109%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:30.07
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 7344168
+	Maximum resident set size (kbytes): 5812732
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 2
-	Minor (reclaiming a frame) page faults: 3708218
-	Voluntary context switches: 859
-	Involuntary context switches: 66815
+	Minor (reclaiming a frame) page faults: 4519854
+	Voluntary context switches: 877
+	Involuntary context switches: 99080
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0

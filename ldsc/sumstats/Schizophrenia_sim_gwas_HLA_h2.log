@@ -1,0 +1,45 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--h2 /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/Schizophrenia_sim_gwas_HLA.sumstats.gz \
+--ref-ld-chr /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/baselineLD_v2.3/baselineLD. \
+--out /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/Schizophrenia_sim_gwas_HLA_h2 \
+--w-ld-chr /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/GRCh38/weights/weights.hm3_noMHC. 
+
+Beginning analysis at Thu Mar 12 23:57:35 2026
+Reading summary statistics from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/Schizophrenia_sim_gwas_HLA.sumstats.gz ...
+Read summary statistics for 55757 SNPs.
+Reading reference panel LD Score from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/baselineLD_v2.3/baselineLD.[1-22] ... (ldscore_fromlist)
+Read reference panel LD Scores for 1190321 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/GRCh38/weights/weights.hm3_noMHC.[1-22] ... (ldscore_fromlist)
+Read regression weight LD Scores for 1186879 SNPs.
+After merging with reference panel LD, 2972 SNPs remain.
+After merging with regression SNP LD, 10 SNPs remain.
+WARNING: number of SNPs less than 200k; this is almost always bad.
+Removed 0 SNPs with chi^2 > 80 (10 SNPs remain)
+Traceback (most recent call last):
+  File "./ldsc.py", line 644, in <module>
+    sumstats.estimate_h2(args, log)
+  File "/Users/rosanwang/ldsc/ldscore/sumstats.py", line 359, in estimate_h2
+    twostep=args.two_step, old_weights=old_weights)
+  File "/Users/rosanwang/ldsc/ldscore/regressions.py", line 346, in __init__
+    slow=slow, step1_ii=step1_ii, old_weights=old_weights)
+  File "/Users/rosanwang/ldsc/ldscore/regressions.py", line 208, in __init__
+    jknife = jk.LstsqJackknifeFast(x, y, n_blocks)
+  File "/Users/rosanwang/ldsc/ldscore/jackknife.py", line 307, in __init__
+    Jackknife.__init__(self, x, y, n_blocks, separators)
+  File "/Users/rosanwang/ldsc/ldscore/jackknife.py", line 90, in __init__
+    self.N, self.p = _check_shape(x, y)
+  File "/Users/rosanwang/ldsc/ldscore/jackknife.py", line 32, in _check_shape
+    raise ValueError('More dimensions than datapoints.')
+ValueError: More dimensions than datapoints.
+
+Analysis finished at Thu Mar 12 23:58:02 2026
+Total time elapsed: 26.78s

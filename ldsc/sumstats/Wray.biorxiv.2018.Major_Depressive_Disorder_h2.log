@@ -12,7 +12,7 @@ Call:
 --out /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/Wray.biorxiv.2018.Major_Depressive_Disorder_h2 \
 --w-ld-chr /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/GRCh38/weights/weights.hm3_noMHC. 
 
-Beginning analysis at Sat Mar  7 21:02:05 2026
+Beginning analysis at Thu Mar 12 17:25:58 2026
 Reading summary statistics from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/Wray.biorxiv.2018.Major_Depressive_Disorder.sumstats.gz ...
 Read summary statistics for 1183173 SNPs.
 Reading reference panel LD Score from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/baselineLD_v2.3/baselineLD.[1-22] ... (ldscore_fromlist)
@@ -43,5 +43,5 @@ Lambda GC: 1.2234
 Mean Chi^2: 1.253
 Intercept: 1.0087 (0.0103)
 Ratio: 0.0342 (0.0407)
-Analysis finished at Sat Mar  7 21:02:36 2026
-Total time elapsed: 30.88s
+Analysis finished at Thu Mar 12 17:26:28 2026
+Total time elapsed: 30.46s

@@ -1,0 +1,41 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./munge_sumstats.py \
+--out /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/Anorexia_sim_gwas_FOXP1 \
+--N 489.0 \
+--sumstats /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/gwas_simulation/Anorexia/Anorexia_sim_gwas_FOXP1.mlma 
+
+Interpreting column names as follows:
+A1:	Allele 1, interpreted as ref allele for signed sumstat.
+p:	p-Value
+A2:	Allele 2, interpreted as non-ref allele for signed sumstat.
+b:	[linear/logistic] regression coefficient (0 --> no effect; above 0 --> A1 is trait/risk increasing)
+SNP:	Variant ID (e.g., rs number)
+
+Reading sumstats from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/gwas_simulation/Anorexia/Anorexia_sim_gwas_FOXP1.mlma into memory 5000000 SNPs at a time.
+Read 6112 SNPs from --sumstats file.
+Removed 0 SNPs with missing values.
+Removed 0 SNPs with INFO <= 0.9.
+Removed 0 SNPs with MAF <= 0.01.
+Removed 0 SNPs with out-of-bounds p-values.
+Removed 946 variants that were not SNPs or were strand-ambiguous.
+5166 SNPs remain.
+Removed 0 SNPs with duplicated rs numbers (5166 SNPs remain).
+Using N = 489.0
+Median value of b was -0.00489266, which seems sensible.
+Writing summary statistics for 5166 SNPs (5166 with nonmissing beta) to /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/Anorexia_sim_gwas_FOXP1.sumstats.gz.
+
+Metadata:
+Mean chi^2 = 1.036
+Lambda GC = 0.744
+Max chi^2 = 54.343
+16 Genome-wide significant SNPs (some may have been removed by filtering).
+
+Conversion finished at Thu Mar 12 23:48:05 2026
+Total time elapsed: 0.07s

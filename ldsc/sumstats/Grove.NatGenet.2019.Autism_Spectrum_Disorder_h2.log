@@ -12,7 +12,7 @@ Call:
 --out /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/Grove.NatGenet.2019.Autism_Spectrum_Disorder_h2 \
 --w-ld-chr /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/GRCh38/weights/weights.hm3_noMHC. 
 
-Beginning analysis at Sat Mar  7 21:00:30 2026
+Beginning analysis at Thu Mar 12 17:24:24 2026
 Reading summary statistics from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/Grove.NatGenet.2019.Autism_Spectrum_Disorder.sumstats.gz ...
 Read summary statistics for 1160464 SNPs.
 Reading reference panel LD Score from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/baselineLD_v2.3/baselineLD.[1-22] ... (ldscore_fromlist)
@@ -43,5 +43,5 @@ Lambda GC: 1.1587
 Mean Chi^2: 1.1851
 Intercept: 1.0081 (0.0119)
 Ratio: 0.044 (0.0641)
-Analysis finished at Sat Mar  7 21:01:02 2026
-Total time elapsed: 32.44s
+Analysis finished at Thu Mar 12 17:24:54 2026
+Total time elapsed: 30.54s

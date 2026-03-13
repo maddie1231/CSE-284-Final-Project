@@ -12,7 +12,7 @@ Call:
 --out /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/sumstats/Watson.2018.NatGenet.Anorexia_Nervosa_h2 \
 --w-ld-chr /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/GRCh38/weights/weights.hm3_noMHC. 
 
-Beginning analysis at Sat Mar  7 21:01:35 2026
+Beginning analysis at Thu Mar 12 17:25:25 2026
 Reading summary statistics from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/Watson.2018.NatGenet.Anorexia_Nervosa.sumstats.gz ...
 Read summary statistics for 928535 SNPs.
 Reading reference panel LD Score from /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/ldsc/ref/baselineLD_v2.3/baselineLD.[1-22] ... (ldscore_fromlist)
@@ -43,5 +43,5 @@ Lambda GC: 1.2564
 Mean Chi^2: 1.3021
 Intercept: 1.029 (0.0128)
 Ratio: 0.0962 (0.0424)
-Analysis finished at Sat Mar  7 21:02:04 2026
-Total time elapsed: 29.48s
+Analysis finished at Thu Mar 12 17:25:57 2026
+Total time elapsed: 31.97s
