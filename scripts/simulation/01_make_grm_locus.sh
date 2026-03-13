@@ -1,5 +1,4 @@
-#Script to call GCTA to make genetic relationship matrix for 1000G EUR specific loci needed for the traits we are studying. (Paths point to files on lab cluster but references are included in ref folder on github)
-
+#Script to call GCTA to make genetic relationship matrix for 1000G EUR specific loci needed for the traits we are studying. (Paths point to files on lab cluster, change to your path to downloaded data)
 
 /nfs/lab/tscc/mpittigher/random/gcta-1.95.1-linux-x86_64/squashfs-root/usr/bin/gcta64 \
   --bfile /nfs/lab/tscc/mpittigher/random/new_plinks/chr6_HLA/chr6_HLA \
