@@ -1,0 +1,69 @@
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version v1.95.1 Mac
+* (C) 2010-present, Yang Lab, Westlake University
+* Please report bugs to Jian Yang <jian.yang@westlake.edu.cn>
+*******************************************************************
+Analysis started at 16:53:34 PDT on Sun Mar 08 2026.
+Hostname: 02-0233-Rosan.local
+
+Accepted options:
+--grm /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/grms/chr20_grm
+--pheno /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/gwas_simulation/Autism/Autism_sim_chr20.phen
+--reml
+--reml-no-constrain
+--out /Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/results/gcta/Autism
+
+Note: This is a multi-thread program. You could specify the number of threads by the --thread-num option to speed up the computation if there are multiple processors in your machine.
+
+Reading IDs of the GRM from [/Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/grms/chr20_grm.grm.id].
+489 IDs are read from [/Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/grms/chr20_grm.grm.id].
+Reading the GRM from [/Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/grms/chr20_grm.grm.bin].
+GRM for 489 individuals are included from [/Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/grms/chr20_grm.grm.bin].
+Reading phenotypes from [/Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/gwas_simulation/Autism/Autism_sim_chr20.phen].
+Non-missing phenotypes of 400 individuals are included from [/Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/gwas_simulation/Autism/Autism_sim_chr20.phen].
+Assuming a disease phenotype for a case-control study: 200 cases and 200 controls 
+Note: you can specify the disease prevalence by the option --prevalence so that GCTA can transform the variance explained to the underlying liability scale.
+400 individuals are in common in these files.
+
+Performing  REML analysis ... (Note: may take hours depending on sample size).
+400 observations, 1 fixed effect(s), and 2 variance component(s)(including residual variance).
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.125703 0.129735
+logL: 69.1837
+Running AI-REML algorithm ...
+Iter.	logL	V(G)	V(e)	
+1	69.39	0.07155	0.17884	
+2	71.56	-0.04496	0.28964	
+3	73.70	-0.04115	0.28764	
+4	73.79	-0.03824	0.28601	
+5	73.83	-0.03155	0.28220	
+6	73.87	-0.03155	0.28229	
+7	73.87	-0.03155	0.28229	
+Log-likelihood ratio converged.
+
+Calculating the logLikelihood for the reduced model ...
+(variance component 1 is dropped from the model)
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.25063
+logL: 73.57062
+Running AI-REML algorithm ...
+Iter.	logL	V(e)	
+1	73.57	0.25063	
+Log-likelihood ratio converged.
+
+Summary result of REML analysis:
+Source	Variance	SE
+V(G)	-0.031554	0.037266
+V(e)	0.282288	0.043134
+Vp	0.250735	0.017781
+V(G)/Vp	-0.125845	0.147847
+
+Sampling variance/covariance of the estimates of variance components:
+1.388788e-03	-1.466558e-03	
+-1.466558e-03	1.860505e-03	
+
+Summary result of REML analysis has been saved in the file [/Users/rosanwang/Documents/school/ucsd/year 2/CSE 284/project/results/gcta/Autism.hsq].
+
+Analysis finished at 16:53:34 PDT on Sun Mar 08 2026
+Overall computational time: 0.03 sec.
