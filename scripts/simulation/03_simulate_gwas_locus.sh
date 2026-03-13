@@ -1,4 +1,4 @@
-#Script to run GCTA GWAS simulation tool in 1000G EUR population for each trait using previously selected 5 random"causal" snps. Each GWAS uses simu-cc and simu-k to have a 200 case / 200 control split of donors in the results. Heritabilities are changed to realistically depict estimated heritability for each trait from current research. (Paths point to Gaulton lab cluster but input files can be found on ref folder on github)
+#Script to run GCTA GWAS simulation tool in 1000G EUR population for each trait using previously selected 5 random"causal" snps. Each GWAS uses simu-cc and simu-k to have a 200 case / 200 control split of donors in the results. Heritabilities are changed to realistically depict estimated heritability for each trait from current research. (Paths point to files on lab cluster, change to your paths to downloaded data)
 
 #T1D: 
 /nfs/lab/tscc/mpittigher/random/gcta-1.95.1-linux-x86_64/squashfs-root/usr/bin/gcta64 \
