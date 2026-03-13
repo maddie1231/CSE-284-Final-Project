@@ -1,4 +1,4 @@
-#Script to call GCTA to make genetic relationship matrix for 1000G EUR chromosomes needed for the traits we are studying. (Paths point to files on lab cluster)
+#Script to call GCTA to make genetic relationship matrix for 1000G EUR chromosomes needed for the traits we are studying. (Paths point to files on lab cluster but references are included in ref folder on github)
 
 
 /nfs/lab/tscc/mpittigher/random/gcta-1.95.1-linux-x86_64/squashfs-root/usr/bin/gcta64 \
