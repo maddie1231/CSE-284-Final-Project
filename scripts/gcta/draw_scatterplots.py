@@ -29,6 +29,10 @@ ax.errorbar(
     fmt="o",
 )
 
+for _, row in df.iterrows():
+    ax.annotate(row["trait"], (row["h2_gt"], row["h2_full_chr"]),
+                textcoords="offset points", xytext=(5, 5), fontsize=8)
+
 # identity line
 x_min = min(df["h2_gt"].min(), df["h2_full_chr"].min())
 x_max = max(df["h2_gt"].max(), df["h2_full_chr"].max())
@@ -53,6 +57,10 @@ ax.errorbar(
     yerr=df["se_single_loci"],
     fmt="o",
 )
+
+for _, row in df.iterrows():
+    ax.annotate(row["trait"], (row["h2_gt"], row["h2_single_loci"]),
+                textcoords="offset points", xytext=(5, 5), fontsize=8)
 
 ax.plot([0, 1], [0, 1], linestyle="--")
 ax.set_xlim(0, 1)
