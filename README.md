@@ -23,7 +23,7 @@ cd CSE-284-Final-Project
 
 ### 2. Create the conda environments
 
-for plotting R GWAS summary statistics 
+for plotting R GWAS summary statistics (plotting/gwas_sim_figures.ipynb)
 ```bash
 conda env create -f r-env.yml
 conda activate r_marker_env
