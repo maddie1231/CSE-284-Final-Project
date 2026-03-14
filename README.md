@@ -65,7 +65,7 @@ Run the scripts in order. All scripts are run from the repository root.
 
 see scripts/simulation/
 
-Simulation outputs are in inputs/gwas_simulation/*/*.phem
+Outputs: inputs/gwas_simulation/*/*.phem
 
 ### Step 2: Compute GRM
 Builds the genetic relationship matrix from EUR genotypes. Required for GCTA REML.
@@ -74,7 +74,7 @@ Builds the genetic relationship matrix from EUR genotypes. Required for GCTA REM
 bash scripts/simulation/01_make_grm.sh
 bash scripts/simulation/01_make_grm_locus.sh
 ```
-Output: goes to `inputs/grms/`.
+Output: `inputs/grms/`.
 
 ### Step 3: Run GCTA REML (LMM)
 Runs REML heritability estimation for all simulated phenotypes. Records runtime. 
