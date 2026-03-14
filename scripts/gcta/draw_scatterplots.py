@@ -19,6 +19,7 @@ df = pd.read_csv(input_tsv, sep="\t")
 df["h2_gt"] = df["trait"].map(gt_h2)
 
 # plot full chromosome
+r_chr = df["h2_gt"].corr(df["h2_full_chr"])
 fig, ax = plt.subplots(figsize=(5, 5))
 
 ax.errorbar(
@@ -35,7 +36,7 @@ ax.plot([x_min, x_max], [x_min, x_max], linestyle="--")
 
 ax.set_xlabel("Ground Truth h2")
 ax.set_ylabel("Estimated h2")
-ax.set_title("Full Chromosome")
+ax.set_title(f"Full Chromosome (R={r_chr:.2f})")
 ax.set_aspect("equal", adjustable="box")
 
 plt.tight_layout()
@@ -43,6 +44,7 @@ plt.savefig(output_full_chr_png, dpi=300)
 plt.close()
 
 # plot single loci
+r_loci = df["h2_gt"].corr(df["h2_single_loci"])
 fig, ax = plt.subplots(figsize=(5, 5))
 
 ax.errorbar(
@@ -58,7 +60,7 @@ ax.set_ylim(0, 1)
 
 ax.set_xlabel("Ground Truth h2")
 ax.set_ylabel("Estimated h2")
-ax.set_title("Single Loci")
+ax.set_title(f"Single Loci (R={r_loci:.2f})")
 ax.set_aspect("equal", adjustable="box")
 
 plt.tight_layout()
