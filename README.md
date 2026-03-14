@@ -6,10 +6,9 @@ This project compares two widely-used methods for estimating SNP-based heritabil
 
 - **LDSC (LD Score Regression):** Uses GWAS summary statistics to estimate heritability by regressing chi-squared statistics on precomputed LD scores. It does not require individual-level data.
 
-We simulate multiple phenotypes with varying heritability (h2) and disease prevalence using GCTA and 1000 Genomes CEU genotype data, then compare the two methods on:
+We simulate multiple phenotypes with varying heritability (h2) and disease prevalence using GCTA and 1000 Genomes EUR genotype data, then compare the two methods on:
 1. Heritability estimate accuracy (correlation with true simulated h2)
 2. Average runtime per trait
-3. Average peak memory usage per trait
 
 ---
 
@@ -46,67 +45,57 @@ mkdir -p tools
 git clone https://github.com/bulik/ldsc.git tools/ldsc
 ```
 
-### 4. Prepare data
+### 4. Prepare data (not on github due to size)
 
-Place the EUR PLINK binary files under `data/genotypes/ceu/` and the LD score reference files under `data/ref/` as described in the Data section above.
+Place the EUR PLINK binary files under `data/genotypes/ceu/` 
 
+
+Place LD score reference files under `inputs/ldsc/ref` 
+```bash
+      inputs/ldsc/ref/baselineLD_v2.3
+      inputs/ldsc/ref/GRCh38
+```      
 ---
 
 ## Pipeline
 
 Run the scripts in order. All scripts are run from the repository root.
 
-### Step 1: Simulate phenotypes
+### Step 1: Simulate phenotypes 
 
-```bash
-bash scripts/01_simulate_data.sh data/genotypes/ceu/ceu_1000g
-```
+see scripts/simulation/
 
-Simulates quantitative and binary traits across a grid of heritability values (0.1–0.8) and prevalence values (0.01–0.5), with 10 replicates each. Outputs `.phen` files to `data/simulated/`.
+Simulation outputs are in inputs/gwas_simulation/*/*.phem
 
 ### Step 2: Compute GRM
+Builds the genetic relationship matrix from EUR genotypes. Required for GCTA REML.
 
 ```bash
-bash scripts/02_compute_grm.sh data/genotypes/ceu/ceu_1000g
+bash scripts/simulation/01_make_grm.sh
+bash scripts/simulation/01_make_grm_locus.sh
 ```
-
-Builds the genetic relationship matrix from CEU genotypes. Required for GCTA REML. Output goes to `data/grm/`.
+Output: goes to `inputs/grms/`.
 
 ### Step 3: Run GCTA REML (LMM)
+Runs REML heritability estimation for all simulated phenotypes. Records runtime. 
 
 ```bash
-bash scripts/03_run_gcta_reml.sh
+bash scripts/gcta/run_gcta_chr.sh
+bash scripts/gcta/run_gcta_loci.sh
 ```
+Output: 'results/gcta'
 
-Runs REML heritability estimation for all simulated phenotypes. Records runtime and peak memory. Outputs `.hsq` files and `gcta_timing.tsv` to `results/gcta/`.
-
-### Step 4: Prepare sumstats for LDSC
+### Step 4: Prepare sumstats and run LDSC
+Runs LDSC heritability estimation on all munged sumstats.
 
 ```bash
-bash scripts/04_prepare_sumstats.sh data/genotypes/ceu/ceu_1000g
+bash scripts/ldsc/05a_munge_sumstats.sh
 ```
-
-Runs PLINK GWAS (linear/logistic) on each simulated phenotype, then runs `munge_sumstats.py` to produce LDSC-ready `.sumstats.gz` files in `data/sumstats/`.
-
-### Step 5: Run LDSC
-
-```bash
-bash scripts/05_run_ldsc.sh
-```
-
-Runs LDSC heritability estimation on all munged sumstats. Records runtime and peak memory. Outputs `.log` files and `ldsc_timing.tsv` to `results/ldsc/`.
+Output: 'results/ldsc'
 
 ### Step 6: Analyze and compare results
 
-```bash
-python scripts/06_analyze_results.py
-```
-
-Parses all GCTA and LDSC outputs, computes Pearson correlation between h2 estimates, and produces:
-- `results/summary_table.tsv` — per-trait h2 estimates and timing
-- `results/h2_correlation.png` — scatter plot of GCTA vs LDSC h2
-- `results/runtime_comparison.png` — average runtime per method
-- `results/memory_comparison.png` — average peak memory per method
+see plotting/
 
 ---
 
@@ -116,7 +105,6 @@ Parses all GCTA and LDSC outputs, computes Pearson correlation between h2 estima
 |---|---|
 | h2 correlation | Pearson r between GCTA and LDSC heritability estimates across traits |
 | Runtime | Average wall-clock time per trait for each method |
-| Memory | Average peak resident memory per trait for each method |
 
 ---
 
