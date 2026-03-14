@@ -85,7 +85,7 @@ Output: 'results/gcta'
 Runs LDSC heritability estimation on all munged sumstats.
 
 ```bash
-bash scripts/ldsc/05a_munge_sumstats.sh
+bash scripts/ldsc/05a_munge_sumstats.sh ${PATH_TO_LDSC}
 ```
 Output: 'results/ldsc'
 

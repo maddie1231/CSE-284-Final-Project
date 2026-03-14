@@ -1,16 +1,17 @@
+#!/usr/bin/env bash
 
 ##### step 0 ###
 # download precomputed LD scores 
-wget https://data.broadinstitute.org/alkesgroup/LDSCORE/eur_w_ld_chr.tar.bz2
-tar -jxvf eur_w_ld_chr.tar.bz2
+# wget https://data.broadinstitute.org/alkesgroup/LDSCORE/eur_w_ld_chr.tar.bz2
+# tar -jxvf eur_w_ld_chr.tar.bz2
 
 ##### step 1 ###
 # input: simulated gwas summary statistics with varying h2 
 # output: summary statistics in ldsc format
 
 # NOTE: change this to the directories on your machine 
-ldsc_dir=/Users/rosanwang/ldsc  # dir LDSC is installed in 
-repo_dir=/Users/rosanwang/Documents/school/ucsd/year\ 2/CSE\ 284/project/ # dir of the github project
+ldsc_dir=$1 # dir LDSC is installed in 
+repo_dir="$(cd "$(dirname "$0")/../.." && pwd)" # dir of the github project
 
 cd ${ldsc_dir}  
 conda activate ldsc 
@@ -47,6 +48,14 @@ chr=(
   ${indir}/Anorexia/Anorexia_sim_gwas_chr3.mlma
 )
 
+for f in "${chr[@]}"; do
+    name=$(basename "$f" .mlma)
+    echo "${name}"
+    ./munge_sumstats.py \
+        --sumstats ${f} \
+        --N ${num} \
+        --out ${outdir}/${name}
+done
 
 ##### step 2 ###
 # --ref-ld-chr: independent variable in LDSC
@@ -75,15 +84,3 @@ for file in ${dir}/*.sumstats.gz; do
         --w-ld-chr ${weights} --out ${out}/${name}_h2
 
 done
-
-
-for f in ${dir}/*.sumstats.gz
-do 
-    name=$(basename "$f" .sumstats.gz)
-    echo "  Running LDSC for ${name}..."
-    ./ldsc.py \
-        --h2 ${f} \
-        --ref-ld-chr ${ref} \
-        --w-ld-chr ${weights} --out ${out}/${name}_h2
-done
-
