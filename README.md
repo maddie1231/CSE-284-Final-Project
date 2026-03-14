@@ -6,15 +6,9 @@ This project compares two widely-used methods for estimating SNP-based heritabil
 
 - **LDSC (LD Score Regression):** Uses GWAS summary statistics to estimate heritability by regressing chi-squared statistics on precomputed LD scores. It does not require individual-level data.
 
-We simulate multiple phenotypes with varying heritability (h2) and disease prevalence using GCTA and 1000 Genomes EUR genotype data, then compare the two methods on:
+We simulate multiple phenotypes with varying heritability (h2) using GCTA and 1000 Genomes EUR genotype data, then compare the two methods on:
 1. Heritability estimate accuracy (correlation with true simulated h2)
 2. Average runtime per trait
-
----
-
-**Genotype data source:** 1000 Genomes Project, EUR. Downloaded from the [1000 Genomes FTP](http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/) and convert to PLINK format, keeping only EUR samples.
-
-**LD scores and weights:** Download from the [LDSC GitHub releases](https://github.com/bulik/ldsc) or the LDSC wiki (files `eur_w_ld_chr.tar.bz2` and `weights_hm3_no_hla.tgz`) https://zenodo.org/records/10515792 . 
 
 ---
 
@@ -46,9 +40,11 @@ git clone https://github.com/bulik/ldsc.git tools/ldsc
 ```
 
 ### 4. Prepare data (not on github due to size)
+**Genotype data source:** 1000 Genomes Project, EUR. Downloaded from the [1000 Genomes FTP](http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/) and convert to PLINK format, keeping only EUR samples.
 
 Download the EUR PLINK binary files and use plink to filter them to only EUR donors. Update paths in GWAS simulation scripts named /path/to/your/100G/chr* to the location of your downloaded reference files. 
 
+**LD scores and weights:** Download from the [LDSC GitHub releases](https://github.com/bulik/ldsc) or the LDSC wiki (files `eur_w_ld_chr.tar.bz2` and `weights_hm3_no_hla.tgz`) https://zenodo.org/records/10515792 . 
 
 Place LD score reference files under `inputs/ldsc/ref` 
 ```bash
