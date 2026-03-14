@@ -17,7 +17,7 @@ We simulate multiple phenotypes with varying heritability (h2) using GCTA and 10
 ### 1. Clone this repository
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/maddie1231/CSE-284-Final-Project
 cd CSE-284-Final-Project
 ```
 
