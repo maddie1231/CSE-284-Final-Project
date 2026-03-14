@@ -10,7 +10,7 @@
 # output: summary statistics in ldsc format
 
 # NOTE: change this to the directories on your machine 
-ldsc_dir=$1 # dir LDSC is installed in 
+ldsc_dir=../../tools/ldsc # dir LDSC is installed in 
 repo_dir="$(cd "$(dirname "$0")/../.." && pwd)" # dir of the github project
 
 cd ${ldsc_dir}  
