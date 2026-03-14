@@ -47,7 +47,7 @@ git clone https://github.com/bulik/ldsc.git tools/ldsc
 
 ### 4. Prepare data (not on github due to size)
 
-Place the EUR PLINK binary files under `data/genotypes/ceu/` 
+Download the EUR PLINK binary files and use plink to filter them to only EUR donors. Update GWAS simulation paths to the location of your downloaded reference files. 
 
 
 Place LD score reference files under `inputs/ldsc/ref` 
@@ -65,7 +65,7 @@ Run the scripts in order. All scripts are run from the repository root.
 
 see scripts/simulation/
 
-Outputs: inputs/gwas_simulation/*/*.phem
+Outputs: inputs/gwas_simulation/*/*.phen
 
 ### Step 2: Compute GRM
 Builds the genetic relationship matrix from EUR genotypes. Required for GCTA REML.
