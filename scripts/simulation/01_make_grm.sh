@@ -1,21 +1,21 @@
-#Script to call GCTA to make genetic relationship matrix for 1000G EUR chromosomes needed for the traits we are studying. (Paths point to files on lab cluster, change to your path to downloaded 1000G data)
+#Script to call GCTA to make genetic relationship matrix for 1000G EUR chromosomes needed for the traits we are studying. (Files too large to upload on github, download yourself and change the paths to your downloaded 1000G data)
 
-/nfs/lab/tscc/mpittigher/random/gcta-1.95.1-linux-x86_64/squashfs-root/usr/bin/gcta64 \
-  --bfile /nfs/lab/tscc/ref/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.6 \
+/usr/bin/time -v gcta64 \
+  --bfile /path/to/your/downloaded/1000G/chr6 \
   --make-grm \
   --out chr6_grm
   
-  /nfs/lab/tscc/mpittigher/random/gcta-1.95.1-linux-x86_64/squashfs-root/usr/bin/gcta64 \
-  --bfile /nfs/lab/tscc/ref/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.3 \
+  /usr/bin/time -v gcta64 \
+  --bfile /path/to/your/downloaded/1000G/chr3 \
   --make-grm \
   --out chr3_grm
   
-  /nfs/lab/tscc/mpittigher/random/gcta-1.95.1-linux-x86_64/squashfs-root/usr/bin/gcta64 \
-  --bfile /nfs/lab/tscc/ref/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.13 \
+  /usr/bin/time -v gcta64 \
+  --bfile /path/to/your/downloaded/1000G/chr13 \
   --make-grm \
   --out chr13_grm
   
-  /nfs/lab/tscc/mpittigher/random/gcta-1.95.1-linux-x86_64/squashfs-root/usr/bin/gcta64 \
-  --bfile /nfs/lab/tscc/ref/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.20 \
+  /usr/bin/time -v gcta64 \
+  --bfile /path/to/your/downloaded/1000G/chr20 \
   --make-grm \
   --out chr20_grm
