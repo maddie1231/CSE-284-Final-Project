@@ -21,8 +21,17 @@ git clone https://github.com/maddie1231/CSE-284-Final-Project
 cd CSE-284-Final-Project
 ```
 
-### 2. Create the conda environment
+### 2. Create the conda environments
 
+for plotting R GWAS summary statistics 
+```bash
+conda env create -f r-env.yml
+conda activate r_marker_env
+```
+
+for running LDSC: generate the LDSC conda env in https://github.com/bulik/ldsc 
+
+for running all other scripts
 ```bash
 conda env create -f environment.yml
 conda activate cse284-heritability
