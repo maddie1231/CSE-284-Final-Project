@@ -1,9 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-input_tsv = "results/gcta/heritability_summary.tsv"
-output_full_chr_png = "results/gcta/heritability_full_chr.png"
-output_single_loci_png = "results/gcta/heritability_single_loci.png"
+input_tsv = "../results/gcta/heritability_summary.tsv"
+output_full_chr_png = "../results/gcta/heritability_full_chr.png"
+output_single_loci_png = "../results/gcta/heritability_single_loci.png"
 
 # gt heritability
 gt_h2 = {
