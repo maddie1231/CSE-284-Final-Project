@@ -8,7 +8,7 @@
   --simu-hsq 0.5 \
   --simu-k .5 \
   --simu-rep 1 \
-  --out T1D_results/T1D_sim_chr6
+  --out inputs/gwas_simulation/T1D/T1D_sim_chr6
   
   
  #Anorexia: use chr3 to capture sig loci and .6 heritability to replicate anorexia
