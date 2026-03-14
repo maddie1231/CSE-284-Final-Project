@@ -18,4 +18,4 @@
   /usr/bin/time -v gcta64 \
   --bfile inputs/filtered_plinks/chr20_MACROD2 \
   --make-grm \
-  --out cinputs/grms/hr20_MACROD2_grm
+  --out inputs/grms/hr20_MACROD2_grm
