@@ -14,8 +14,8 @@
 set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "$0")/../.." && pwd)"
-GRM_DIR="${REPO_DIR}/grms"
-SIM_DIR="${REPO_DIR}/gwas_simulation"
+GRM_DIR="${REPO_DIR}/inputs/grms"
+SIM_DIR="${REPO_DIR}/inputs/gwas_simulation"
 OUT_DIR="${REPO_DIR}/results/gcta/full_chromosome"
 TIMING_FILE="${OUT_DIR}/gcta_timing.tsv"
 
