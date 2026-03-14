@@ -47,7 +47,7 @@ git clone https://github.com/bulik/ldsc.git tools/ldsc
 
 ### 4. Prepare data (not on github due to size)
 
-Download the EUR PLINK binary files and use plink to filter them to only EUR donors. Update GWAS simulation paths to the location of your downloaded reference files. 
+Download the EUR PLINK binary files and use plink to filter them to only EUR donors. Update paths in GWAS simulation scripts named /path/to/your/100G/chr* to the location of your downloaded reference files. 
 
 
 Place LD score reference files under `inputs/ldsc/ref` 
