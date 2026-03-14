@@ -28,8 +28,6 @@ conda env create -f environment.yml
 conda activate cse284-heritability
 ```
 
-> **Note:** `gcta` and `plink2` are available via bioconda. If `gcta` is not available in your conda channel, download the binary directly from the [GCTA website](https://yanglab.westlake.edu.cn/software/gcta/) and place it on your PATH.
-
 ### 3. Install LDSC
 
 LDSC is not on conda. Clone it into `tools/ldsc/`:
