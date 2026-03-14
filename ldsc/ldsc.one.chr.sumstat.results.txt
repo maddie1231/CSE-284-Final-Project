@@ -1,0 +1,6 @@
+Trait	h2 - LDSC	se - LDSC	run time - LDSC	h2 - actual
+Wray.biorxiv.2018.Major_Depressive_Disorder	-15.0626	8.5128	30.88s	0.4
+Watson.2018.NatGenet.Anorexia_Nervosa	-8.6143	11.9961	29.48s	0.8
+PGC.Nature.2014.Schizophrenia	11.9673	11.0639	31.35s	0.6
+Grove.NatGenet.2019.Autism_Spectrum_Disorder	7.419	6.5349	32.44s	0.75
+Chiou.Nature.2021.Type_1_diabetes	-9.4143	6.3862	30.03s	0.5
